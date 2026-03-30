@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37027.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "resume-page", ".", "{5B0F0C8C-B108-6B66-7949-66C883F5F886}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54624"
+		Debug.AspNetCompiler.PhysicalPath = "E:\git\resume-page\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54624\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54624"
+		Release.AspNetCompiler.PhysicalPath = "E:\git\resume-page\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54624\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54624"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B0F0C8C-B108-6B66-7949-66C883F5F886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0F0C8C-B108-6B66-7949-66C883F5F886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEA3F902-C1A9-4D6D-A2B1-F58EAAB7E5C2}
+	EndGlobalSection
+EndGlobal
