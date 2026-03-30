@@ -1,0 +1,140 @@
+﻿/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+/* 简历容器 */
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部样式 */
+.resume-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* 头像样式 */
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f8ff;
+}
+
+/* 基本信息样式 */
+.basic-info h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.job {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+    .contact a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+/* 主体样式 */
+.resume-main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 章节标题 */
+.resume-section h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+/* 章节内容 */
+.section-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+    .section-item h3 {
+        font-size: 16px;
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .section-item p {
+        font-size: 14px;
+        color: #34495e;
+        line-height: 1.6;
+        margin-bottom: 6px;
+    }
+
+    .section-item a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+        .section-item a:hover {
+            text-decoration: underline;
+        }
+
+/* 技能列表 */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-item {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* 底部样式 */
+.resume-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+}
