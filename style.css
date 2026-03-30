@@ -1,140 +1,250 @@
-﻿/* 全局样式重置 */
+﻿/* 全局初始化 + CSS变量（企业级规范） */
+:root {
+    --main-color: #2563eb;
+    --bg-color: #f8fafc;
+    --card-color: #ffffff;
+    --text-color: #1e293b;
+    --gray-color: #64748b;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Microsoft YaHei", sans-serif;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f5f7fa;
-    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
 }
+
+/* 顶部导航栏（高级感核心） */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--card-color);
+    box-shadow: var(--shadow);
+    z-index: 999;
+    padding: 12px 0;
+}
+
+.nav-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links a {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+        .nav-links a:hover {
+            color: var(--main-color);
+        }
 
 /* 简历容器 */
 .resume-container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 80px auto 40px;
+    background: var(--card-color);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
 }
 
 /* 头部样式 */
 .resume-header {
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #e0e0e0;
-    margin-bottom: 30px;
+    gap: 40px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
 }
 
-/* 头像样式 */
 .avatar img {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #f0f8ff;
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
 }
 
-/* 基本信息样式 */
 .basic-info h1 {
-    font-size: 28px;
-    color: #2c3e50;
+    font-size: 32px;
+    color: var(--text-color);
     margin-bottom: 8px;
 }
 
 .job {
     font-size: 16px;
-    color: #7f8c8d;
-    margin-bottom: 12px;
+    color: var(--gray-color);
+    margin-bottom: 15px;
 }
 
-.contact {
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     font-size: 14px;
-    color: #34495e;
-    line-height: 1.6;
+    color: var(--text-color);
 }
 
-    .contact a {
-        color: #3498db;
+    .contact-list a {
+        color: var(--main-color);
         text-decoration: none;
     }
 
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
-/* 主体样式 */
+/* 主体内容 */
 .resume-main {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 /* 章节标题 */
 .resume-section h2 {
-    font-size: 20px;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 4px solid #3498db;
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 5px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* 章节内容 */
+/* 内容卡片 */
 .section-item {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    background: #f1f5f9;
+    padding: 25px;
+    border-radius: 12px;
+    transition: var(--transition);
 }
+
+    .section-item:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+    }
 
     .section-item h3 {
-        font-size: 16px;
-        color: #2c3e50;
+        font-size: 17px;
+        color: var(--main-color);
         margin-bottom: 8px;
     }
 
-    .section-item p {
-        font-size: 14px;
-        color: #34495e;
-        line-height: 1.6;
-        margin-bottom: 6px;
-    }
+.time {
+    color: var(--gray-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
 
-    .section-item a {
-        color: #3498db;
-        text-decoration: none;
-    }
+.section-item p {
+    font-size: 15px;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
 
-        .section-item a:hover {
-            text-decoration: underline;
-        }
+.section-item a {
+    color: var(--main-color);
+    text-decoration: none;
+}
 
-/* 技能列表 */
-.skills-list {
+/* 技能标签（高级网格布局） */
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.skill-item {
-    background: #e3f2fd;
-    color: #1976d2;
+.skill-tag {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 14px;
+    transition: var(--transition);
 }
 
-/* 底部样式 */
+    .skill-tag:hover {
+        transform: scale(1.05);
+    }
+
+/* 项目卡片强化 */
+.project-item {
+    border-left: 4px solid var(--main-color);
+}
+
+/* 底部 */
 .resume-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #e0e0e0;
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid #e2e8f0;
     text-align: center;
     font-size: 14px;
-    color: #7f8c8d;
+    color: var(--gray-color);
+    position: relative;
+}
+
+/* 返回顶部按钮 */
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+    .back-top:hover {
+        background: #1d4ed8;
+    }
+
+/* 响应式适配（手机/平板都能用，显技术） */
+@media (max-width: 768px) {
+    .resume-container {
+        margin: 70px 15px 20px;
+        padding: 30px 20px;
+    }
+
+    .resume-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
 }

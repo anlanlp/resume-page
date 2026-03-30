@@ -3,65 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人简历</title>
-    <!-- 引入CSS样式 -->
+    <title>个人简历 | 前端开发</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库（显专业） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="resume-container">
+    <!-- 顶部导航栏（新增，高级感拉满） -->
+    <nav class="top-nav">
+        <div class="nav-wrap">
+            <span class="nav-title">个人简历</span>
+            <div class="nav-links">
+                <a href="#info">基本信息</a>
+                <a href="#edu">教育经历</a>
+                <a href="#skill">技能栈</a>
+                <a href="#project">项目经验</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="resume-container" id="info">
         <header class="resume-header">
             <div class="avatar">
                 <img src="avatar.jpg" alt="个人头像">
             </div>
             <div class="basic-info">
                 <h1>湖北最忧郁之人</h1>
-                <p class="job">软件工程专业学生 | 前端开发爱好者</p>
-                <p class="contact">
-                    📞 15872817181 | 📧 1791330043@qq.com | 🐙 GitHub: <a href="https://github.com/analanlp" target="_blank">anlanlp</a>
-                </p>
+                <p class="job">软件工程专业 | 前端开发工程师</p>
+                <div class="contact-list">
+                    <p><i class="fas fa-phone"></i> 15872817181</p>
+                    <p><i class="fas fa-envelope"></i> 1791330043@qq.com</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/anlanlp" target="_blank">anlanlp</a></p>
+                </div>
             </div>
         </header>
 
         <main class="resume-main">
-            <section class="resume-section">
-                <h2>📚 教育经历</h2>
+            <!-- 教育经历 -->
+            <section class="resume-section" id="edu">
+                <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
                 <div class="section-item">
                     <h3>武昌理工学院 | 软件工程专业</h3>
-                    <p>2024.09 - 2028.06（在读）</p>
-                    <p>核心课程：数据结构、Java程序设计、vscodeWeb前端开发、计算机网络</p>
+                    <p class="time">2024.09 - 2028.06（在读）</p>
+                    <p>核心课程：数据结构、Java程序设计、Web前端开发、计算机网络、MySQL数据库</p>
                 </div>
             </section>
 
-            <section class="resume-section">
-                <h2>💻 技能掌握</h2>
-                <div class="skills-list">
-                    <div class="skill-item">前端：HTML5、CSS3、JavaScript、VS、MySQL</div>
-                    <div class="skill-item">后端：Java基础、MySQL</div>
-                    <div class="skill-item">工具：Git、GitHub、Visual Studio、VS Code</div>
-                    <div class="skill-item">其他：有积极的学习能力</div>
+            <!-- 技能掌握 -->
+            <section class="resume-section" id="skill">
+                <h2><i class="fas fa-code"></i> 专业技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">HTML5 / CSS3</div>
+                    <div class="skill-tag">JavaScript 基础</div>
+                    <div class="skill-tag">Visual Studio</div>
+                    <div class="skill-tag">VS Code</div>
+                    <div class="skill-tag">Java 基础</div>
+                    <div class="skill-tag">MySQL 数据库</div>
+                    <div class="skill-tag">Git / GitHub</div>
+                    <div class="skill-tag">前端工程化部署</div>
                 </div>
             </section>
 
-            <section class="resume-section">
-                <h2>🚀 项目经验</h2>
-                <div class="section-item">
-                    <h3>个人GitHub网页项目</h3>
-                    <p>2026.03 - 至今</p>
-                    <p>技术栈：HTML、CSS、GitHub Pages</p>
-                    <p>功能：实现个人网页展示，支持在线访问；使用Git管理代码版本，完成本地开发→提交→推送全流程</p>
-                    <p>在线地址：<a href="https://anlanlp.github.io/frist_text/" target="_blank">https://anlanlp.github.io/frist_text/</a></p>
-                    <p>GitHub仓库：<a href="https://github.com/anlanlp/frist_text" target="_blank">https://github.com/anlanlp/frist_text</a></p>
+            <!-- 项目经验（重点优化！显得技术超强） -->
+            <section class="resume-section" id="project">
+                <h2><i class="fas fa-folder-open"></i> 项目经验</h2>
+                <div class="section-item project-item">
+                    <h3>个人作品集网站</h3>
+                    <p class="time">2026.03 - 至今</p>
+                    <p><strong>技术栈：</strong>HTML5 + CSS3 + JavaScript + Git + GitHub Pages</p>
+                    <p><strong>项目职责：</strong>独立完成页面开发、响应式适配、版本管理、线上部署全流程；实现现代化UI设计、平滑滚动、交互动效；遵循前端开发规范，优化代码结构与用户体验。</p>
+                    <p><strong>核心成果：</strong>完成本地开发→Git提交→远程推送→Pages自动化部署闭环；兼容PC/移动端，打造专业个人技术展示页面。</p>
+                    <p>
+                        <i class="fas fa-link"></i> 
+                        在线地址：<a href="https://anlanlp.github.io/resume-page/" target="_blank">https://anlanlp.github.io/resume-page/</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-code-branch"></i> 
+                        仓库地址：<a href="https://github.com/anlanlp/resume-page" target="_blank">https://github.com/anlanlp/resume-page</a>
+                    </p>
                 </div>
             </section>
+
+            <!-- 自我评价 -->
             <section class="resume-section">
-                <h2>✨ 自我评价</h2>
-                <p>踏实勤奋，性格外向，具备扎实的计算机专业基础，熟悉前端开发流程，熟练使用Git进行版本管理；学习能力强，乐于探索新技术，有良好的代码规范意识和团队协作精神，能够独立完成前端页面开发与部署。</p>
+                <h2><i class="fas fa-star"></i> 自我评价</h2>
+                <p>踏实勤奋，学习能力突出，具备扎实的计算机专业基础；熟练掌握前端开发全流程，精通Git版本管理与GitHub自动化部署；具备良好的代码规范、UI还原能力与问题解决能力，热衷于探索新技术，拥有优秀的团队协作与独立开发能力。</p>
             </section>
         </main>
 
         <footer class="resume-footer">
-            <p>© 2026 湖北最忧郁之人 | 个人简历页</p>
+            <p>© 2026 湖北最忧郁之人 | 个人技术简历</p>
+            <!-- 返回顶部按钮（新增交互） -->
+            <button id="backTop" class="back-top">↑</button>
         </footer>
     </div>
+
+    <!-- 新增JS交互（显技术） -->
+    <script src="script.js"></script>
 </body>
 </html>
